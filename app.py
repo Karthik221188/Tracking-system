@@ -11,7 +11,7 @@ DATA_DIR = "data"
 os.makedirs(DATA_DIR, exist_ok=True)
 
 USERS_FILE = "users.xlsx"
-LOGO_FILE = "meesho_logo.png"
+LOGO_FILE = "meesho.png"
 
 TRACKING_FILE = f"{DATA_DIR}/tracking_master.csv"
 RCA_FILE = f"{DATA_DIR}/rca_data.csv"
@@ -58,7 +58,7 @@ if "logged_in" not in st.session_state:
     st.session_state.logged_in = False
 
 # ========================== LOGO ==========================
-st.image(Image.open(meesho_logo), width=150)
+st.image(Image.open(meesho.png), width=150)
 
 # ========================== LOGIN ==========================
 if not st.session_state.logged_in:
@@ -286,4 +286,5 @@ st.sidebar.divider()
 if st.sidebar.button("Logout"):
     st.session_state.clear()
     st.rerun()
+
 
