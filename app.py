@@ -22,7 +22,7 @@ MAX_REMARKS_PER_AWB = 10
 DATA_RETENTION_DAYS = 365
 
 st.set_page_config(
-    page_title="Meesho Private Courier Tracking",
+    page_title="Meesho Tracking",
     layout="wide"
 )
 
@@ -286,5 +286,6 @@ st.sidebar.divider()
 if st.sidebar.button("Logout"):
     st.session_state.clear()
     st.rerun()
+
 
 
